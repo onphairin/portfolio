@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Onphairin Chandee</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #e0deb8;
+    }
+
+    header {
+      background: linear-gradient(90deg, #e08fc9 0%, #e7a77f 100%);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    header h1,
+    header p,
+    header nav a {
+      color: rgb(248, 247, 247);
+    }
+
+    header nav a:hover {
+      color: rgb(248, 247, 247);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col items-center space-y-2 md:flex-row md:justify-between md:items-center md:space-y-0">
+    <img src="images/Profile Photo.jpg" alt="Profile Photo" class="w-32 h-32 rounded-full shadow-lg border-4 border-white mb-2 md:mb-0" />
+    <div class="text-center md:text-left">
+      <h1 class="text-2xl font-bold">Onphairin Chandee</h1>
+      <p class="text-2xl font-bold">UX/UI Designer</p>
+    </div>
+    <nav class="flex space-x-6 text-sm font-semibold text-white">
+  <a href="javascript:void(0)" onclick="showSection('about')" 
+     class="relative px-3 py-2 rounded-md hover:text-indigo-300 transition-colors duration-300 cursor-pointer">
+    About
+    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="javascript:void(0)" onclick="showSection('projects')" 
+     class="relative px-3 py-2 rounded-md hover:text-indigo-300 transition-colors duration-300 cursor-pointer">
+    Projects
+    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+  </a>
+  <a href="javascript:void(0)" onclick="showSection('contact')" 
+     class="relative px-3 py-2 rounded-md hover:text-indigo-300 transition-colors duration-300 cursor-pointer">
+    Contact
+    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-400 transition-all duration-300 group-hover:w-full"></span>
+  </a>
+</nav>
+
+  </div>
+</header>
+
+
+  <!-- About Section -->
+  <section id="about" class="py-16 max-w-4xl mx-auto px-6">
+    <h3 class="text-3xl font-semibold text-indigo-600 mb-4">About Me</h3>
+    <p class="text-gray-700 leading-relaxed">
+     สวัสดีค่ะ ดิฉันชื่อ “อรไพลิน จันดี” ชื่อเล่น “ฟิ้งค์” ปัจจุบันเป็นนักศึกษาชั้นปีที่ 4 คณะวิทยาลัยนวัตกรรมดิจิทัลเทคโนโลยี สาขาวิทยาการคอมพิวเตอร์ มหาวิทยาลัยรังสิต
+ดิฉันมีความสนใจและหลงใหลในการออกแบบประสบการณ์ผู้ใช้ (UX) และส่วนติดต่อผู้ใช้ (UI) เพื่อสร้างสรรค์งานออกแบบที่ทั้งสวยงาม ใช้งานง่าย และตอบโจทย์ความต้องการของผู้ใช้อย่างแท้จริง
+ดิฉันให้ความสำคัญกับการทำงานร่วมกับทีม ทั้งในด้านการแลกเปลี่ยนไอเดียและการปรับปรุงผลงานให้มีประสิทธิภาพมากที่สุด
+เป้าหมายของดิฉันคือการพัฒนาทักษะด้านการออกแบบ UX/UI และการใช้เครื่องมือออกแบบอย่างมืออาชีพ เพื่อก้าวสู่การเป็น UX/UI Designer ในองค์กรชั้นนำในอนาคต
+    </p>
+
+    <!-- Skills and Tools -->
+    <div class="mt-12 grid md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold text-indigo-600 mb-3">Languages</h4>
+        <ul class="list-disc list-inside space-y-1 text-gray-700">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Dart</li>
+          <li>Node.js</li>
+        </ul>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold text-indigo-600 mb-3">Tools & Frameworks</h4>
+        <ul class="list-disc list-inside space-y-1 text-gray-700">
+          <li>VS Code, XAMPP, MySQL</li>
+          <li>Flutter, Arduino IDE</li>
+          <li>Google Colab, Jupyter</li>
+          <li>Remix IDE, Ganache, MetaMask</li>
+          <li>Next.js, Node.js</li>
+          <li>TensorFlow, Keras, OpenCV</li>
+          <li>Figma, Miro</li>
+          <li>Processing, NetBeans, EditPlus</li>
+          <li>MS Word, Excel, Access</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="py-16 max-w-6xl mx-auto px-6 hidden">
+  <h3 class="text-3xl font-semibold text-indigo-600 mb-8">Projects</h3>
+  <div class="grid gap-6 md:grid-cols-2">
+    <!-- Project 1 -->
+    <div class="border rounded-lg shadow-sm">
+      <a href="finkconverter.html" class="block px-4 py-3 font-semibold text-indigo-700 bg-pink-100 hover-gradient rounded-t-lg">
+        FINKCONVERTER
+      </a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="border rounded-lg shadow-sm">
+      <a href="dental Clinic .html" class="block px-4 py-3 font-semibold text-indigo-700 bg-pink-100 hover-gradient rounded-t-lg">
+        Dental Clinic 
+      </a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="border rounded-lg shadow-sm">
+      <a href="review-cafe.html" class="block px-4 py-3 font-semibold text-indigo-700 bg-pink-100 hover-gradient rounded-t-lg">
+        Review Cafe
+      </a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="border rounded-lg shadow-sm">
+      <a href="bike-rental.html" class="block px-4 py-3 font-semibold text-indigo-700 bg-pink-100 hover-gradient rounded-t-lg">
+        Bike Rental
+      </a>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="border rounded-lg shadow-sm">
+      <a href="smartwatering-system.html" class="block px-4 py-3 font-semibold text-indigo-700 bg-pink-100 hover-gradient rounded-t-lg">
+        SmartWatering System
+      </a>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="border rounded-lg shadow-sm">
+      <a href="ai-gemstone.html" class="block px-4 py-3 font-semibold text-indigo-700 bg-pink-100 hover-gradient rounded-t-lg">
+        AI Model for Gemstone
+      </a>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="border rounded-lg shadow-sm">
+      <a href="mathes-app.html" class="block px-4 py-3 font-semibold text-indigo-700 bg-pink-100 hover-gradient rounded-t-lg">
+        Mathes App
+      </a>
+    </div>
+
+    <!-- Project 8 -->
+    <div class="border rounded-lg shadow-sm">
+      <a href="ai-aim.html" class="block px-4 py-3 font-semibold text-indigo-700 bg-pink-100 hover-gradient rounded-t-lg">
+        AI AIM
+      </a>
+    </div>
+
+    <!-- Project 9 -->
+    <div class="border rounded-lg shadow-sm">
+      <a href="Delivery-Package Shop System.html" class="block px-4 py-3 font-semibold text-indigo-700 bg-pink-100 hover-gradient rounded-t-lg">
+        Delivery Package Shop System
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Gradient Hover Style -->
+<style>
+  .hover-gradient:hover {
+    background-image: linear-gradient(135deg, #ffe0f0, #e0d9ff); /* ไล่สีชมพูอ่อนไปม่วงพาสเทล */
+    transition: background 0.3s ease;
+  }
+</style>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 max-w-4xl mx-auto px-6 hidden">
+    <h3 class="text-3xl font-semibold text-indigo-600 mb-4">Contact</h3>
+    <div class="space-y-2 text-gray-700">
+      <p>Email: <a href="mailto:finkopr2546@gmail.com" class="text-indigo-600 underline">finkopr2546@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/onphairin" class="text-indigo-600 underline" target="_blank">github.com/onphairin</a></p>
+      <p>Phone: <a href="tel:0882726806" class="text-indigo-600">088-272-6806</a></p>
+      <p>Line ID: <span class="text-indigo-600">fink.opr</span></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6 mt-16">
+    <p>&copy; 2025 Onphairin Chandee. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function showSection(sectionId) {
+  const sections = ['about', 'projects', 'contact'];
+  sections.forEach(id => {
+    document.getElementById(id).classList.add('hidden');
+  });
+  document.getElementById(sectionId).classList.remove('hidden');
+
+      // ล็อกการ scroll แค่หน้า About
+      if (sectionId === 'about') {
+  document.body.style.overflow = 'auto';
+  document.body.style.height = 'auto';
+} else {
+  document.body.style.overflow = 'auto';
+  document.body.style.height = 'auto';
+}
+    }
+
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      const section = params.get('section') || 'about';
+      showSection(section);
+    };
+  </script>
+
+</body>
+</html>
